@@ -4,8 +4,8 @@
     box-sizing: border-box;
 }
 
-.header-wrapper,
-.main-nav{
+.header-wrapper
+{
     display: flex;
     flex-direction: column;
 }
@@ -70,26 +70,30 @@ a, a:link, a:visited{
 
 
 /* header */
+.top-header{
+    display: flex;
+    flex-direction: column;
+}
 
 .header-wrapper{
     padding: 1em 0;
 }
 
 .name{
-    text-align: center;
     font-family: Teko, sans-serif;
     font-size: 50px;
     margin-bottom: 0px;
+    align-self: center;
 }
 
-
+.main-nav{
+    padding: 0;
+}
 .main-nav li{
+    margin: 5px;
+    padding: 15px 10px 10px 10px;
     background-color: white;
     font-size: 25px;
-    height: 1.7em;
-    margin: .5em;
-    padding-top: 15px;
-    padding-bottom: 1px;
 }
 
 .profile-wrapper{
@@ -181,9 +185,6 @@ a, a:link, a:visited{
     font-size: 20px;
 }
 
-.footer-wrapper h3{
-    font-family: Teko, sans-serif;
-}
 
 .footer-name{
     float: left;
@@ -216,7 +217,9 @@ a, a:link, a:visited{
 .top-header{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
+
 .main-nav li{
     background-color: #fafafa;
     justify-content: center;
@@ -298,8 +301,8 @@ a, a:link, a:visited{
 }
 
 .footer-nav{
+    margin-top: 0px;
     display: flex;
-    flex-direction: row;
     float: right;
     font-size: 25px;
     padding-right: .5em;    
@@ -320,6 +323,7 @@ a, a:link, a:visited{
 
 .name{
     display: flex;
+    flex-grow: 2;
 }
 
 .main-nav{
